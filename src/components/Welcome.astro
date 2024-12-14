@@ -28,13 +28,41 @@
           width: 90%; /* 画面サイズが小さい場合は幅を調整 */
         }
       }
+
+      /* テーブルのスタイルを追加 */
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      table th,
+      table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      table th {
+        background-color: #f2f2f2;
+        text-align: left;
+        font-weight: bold;
+      }
+
+      table tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+
+      table tr:hover {
+        background-color: #eaeaea;
+      }
     </style>
   </head>
   <body>
-    <h2>証拠写真</h2>
+    <h2>比較写真</h2>
 
     <section>
       <h3>展示品レンズ</h3>
+      <p>ヨドバシカメラ マルチメディアAkibaの展示品レンズで撮影</p>
       <h4>撮影条件</h4>
       <p>F1.4, SS:1/250, ISO-100</p>
       <!-- 画像をリンクでラップ -->
@@ -64,6 +92,9 @@
 
     <section>
       <h3>中古品ランクBのレンズ</h3>
+      <p>
+        カメラのキタムラ ネットショップで購入した中古品ランクBのレンズで撮影
+      </p>
       <h4>撮影条件</h4>
       <p>F1.4, SS:1/250, ISO-100</p>
       <!-- 画像をリンクでラップ -->
@@ -89,6 +120,88 @@
           オリジナル画像を表示 (10.5MB)
         </a>
       </p>
+    </section>
+
+    <section>
+      <h2>参考情報</h2>
+      <p>
+        <a
+          href="https://www.net-chuko.com/static/public/buy/pop/item-status.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          >商品の状態について
+        </a>
+      </p>
+      <h3 id="camera-lank">中古カメラのランク</h3>
+      <table summary="商品の状態" class="tableStyleE">
+        <colgroup>
+          <col width="10%" class="contents" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th scope="col" class="contents">状態</th>
+            <th scope="col" class="contents">状態の目安</th>
+            <th scope="col" class="contents">基準</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><p>AA</p></td>
+            <td><p>新品同様</p></td>
+            <td><p>使用した形跡が無い。非常にきれいで、新品同様のもの。</p></td>
+          </tr>
+          <tr>
+            <td><p>A</p></td>
+            <td><p>美品</p></td>
+            <td
+              ><p>
+                使用した形跡が少ない。きれいで、正常作動するもの。<br
+                />本体内部に僅かなゴミがあるが撮影に影響がないもの。
+              </p></td
+            >
+          </tr>
+          <tr>
+            <td><p>AB</p></td>
+            <td><p>良品</p></td>
+            <td
+              ><p>
+                外観に多少のキズや擦れなどがある。正常作動するもの。<br
+                />本体内部に少量のゴミがあるが撮影に影響がないもの。
+              </p></td
+            >
+          </tr>
+          <tr>
+            <td><p>B</p></td>
+            <td><p>並品</p></td>
+            <td
+              ><p>
+                外観に比較的目立つキズや擦れがある。テカリなどがあるが、正常作動するもの。<br
+                />本体内部に多少のゴミがあるが撮影に支障がないもの。
+              </p></td
+            >
+          </tr>
+          <tr>
+            <td><p>C</p></td>
+            <td><p>やや難あり</p></td>
+            <td
+              ><p>
+                外観に目立つキズや擦れが多い。テカリなどがあるが、作動するもの
+                。<br
+                />本体内部にカビ、ゴミ、クモリ、バルサム切れなどがあるが、撮影の条件によっては支障が少ないもの。
+              </p></td
+            >
+          </tr>
+          <tr>
+            <td><p>D</p></td>
+            <td><p>故障品<br />(ジャンク品)</p></td>
+            <td
+              ><p>
+                作動に問題のあるもの。部品取り、コレクション用。破損品。
+              </p></td
+            >
+          </tr>
+        </tbody>
+      </table>
     </section>
   </body>
 </html>
